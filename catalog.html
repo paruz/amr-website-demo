@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>קטלוג | א.מ.ר חומרי בניין</title>
+  <meta name="description" content="קטלוג מוצרים לדוגמה: חומרי בניין, כלי עבודה, צבע ושיפוץ, לבית ולגינה.">
+  <meta name="theme-color" content="#1A1A1A">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon.ico" sizes="48x48">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;800;900&family=Karantina:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="catalog-page">
+  <a class="skip" href="#grid">דילוג למוצרים</a>
+
+  <div class="tape" aria-hidden="true"><div class="tape-scale"></div><div class="tape-fill"><div class="tape-scale"></div></div><div class="tape-hook"></div></div>
+
+  <header class="site-head">
+    <a class="brand" href="index.html" aria-label="א.מ.ר חומרי בניין, דף הבית">
+      <img class="brand-full" src="assets/logo-horizontal-on-black.svg" alt="א.מ.ר חומרי בניין">
+      <img class="brand-compact" src="assets/logo-compact-on-black.svg" alt="">
+    </a>
+    <nav class="main-nav" aria-label="ניווט ראשי">
+      <a href="index.html#categories">מה יש אצלנו</a>
+      <a href="catalog.html" aria-current="page">קטלוג</a>
+      <a href="index.html#pros">לקבלנים</a>
+      <a href="index.html#visit">איך מגיעים</a>
+    </nav>
+    <button class="btn btn-yellow head-cta quote-btn" type="button" aria-haspopup="dialog">בקשת מחיר <span class="count">0</span></button>
+    <button class="burger" type="button" aria-label="תפריט" aria-expanded="false"><span></span><span></span><span></span></button>
+  </header>
+
+  <main>
+    <section class="cat-hero">
+      <h1>קטלוג</h1>
+      <p>בוחרים מוצרים, מוסיפים לבקשת מחיר ושולחים לנו את הרשימה בוואטסאפ. מחזירים הצעה עם מחיר וזמן אספקה.</p>
+    </section>
+
+    <div class="toolbar">
+      <label class="visually-hidden" for="q">חיפוש מוצר</label>
+      <input class="search" id="q" type="search" placeholder="חפשו מוצר, למשל מלט או רולר" autocomplete="off">
+      <div class="chips" role="group" aria-label="סינון לפי מחלקה"></div>
+    </div>
+
+    <div class="grid" id="grid" aria-live="polite"></div>
+    <p class="empty" hidden>לא מצאנו מוצר כזה בקטלוג הדוגמה. נסו מילה אחרת, או שלחו לנו בוואטסאפ מה אתם מחפשים.</p>
+  </main>
+
+  <footer class="site-foot">
+    <a class="brand-foot" href="index.html" aria-label="א.מ.ר חומרי בניין"><img src="assets/logo-vertical-on-black.svg" alt="א.מ.ר חומרי בניין"></a>
+    <nav class="foot-links" aria-label="קישורים נוספים">
+      <a href="index.html">דף הבית</a>
+      <a href="#" data-demo="a11y">הצהרת נגישות</a>
+      <a href="#" data-demo="privacy">מדיניות פרטיות</a>
+    </nav>
+    <p class="demo-note">אתר הדגמה. המוצרים והפרטים לדוגמה.</p>
+  </footer>
+
+  <div class="drawer-back"></div>
+  <aside class="drawer" role="dialog" aria-modal="true" aria-labelledby="drawer-title" hidden>
+    <header><h2 id="drawer-title">בקשת מחיר</h2><button class="close" type="button" aria-label="סגירה">×</button></header>
+    <ul class="list"></ul>
+    <p class="empty-list">הרשימה ריקה. הוסיפו מוצרים מהקטלוג.</p>
+    <footer><button class="btn btn-yellow send" type="button">שלחו את הרשימה בוואטסאפ</button></footer>
+  </aside>
+
+  <div class="toast" role="status" aria-live="polite"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/icons.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>
